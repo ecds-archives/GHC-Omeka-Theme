@@ -33,9 +33,9 @@ $file_link_options = array();
 head(array('title' => item('Dublin Core', 'Title'), 'breadCrumbs' => $breadCrumbs, 'navbarTitle' => $navbarTitle));
 ?>
 
-<div id="primary">
+<div id="primary" xmlns:dc="http://purl.org/dc/elements/1.1/">
 
-    <h1><?php echo item('Dublin Core', 'Title'); ?></h1>
+    <h1 property="dc:title"><?php echo item('Dublin Core', 'Title'); ?></h1>
 
 
     <!-- The following returns all of the files associated with an item. -->
@@ -49,7 +49,7 @@ head(array('title' => item('Dublin Core', 'Title'), 'breadCrumbs' => $breadCrumb
     <?php $date = item('Dublin Core', 'Date'); ?>
     <?php if (isset($date)): ?>
         <div id="date" class="element">
-            <div class="element-text"><?php echo $date; ?></div>
+            <div class="element-text" property="dc:date"><?php echo $date; ?></div>
         </div>
     <?php endif ?>
 
@@ -57,7 +57,7 @@ head(array('title' => item('Dublin Core', 'Title'), 'breadCrumbs' => $breadCrumb
     <?php if (isset($creators)): ?>
             <div id="creators" class="element">
         <?php foreach ($creators as $creator): ?>
-                <div class="element-text"><?php echo $creator; ?></div>
+                <div class="element-text" property="dc:creator"><?php echo $creator; ?></div>
         <?php endforeach ?>
             </div>
     <?php endif ?>
@@ -65,12 +65,12 @@ head(array('title' => item('Dublin Core', 'Title'), 'breadCrumbs' => $breadCrumb
     <?php $description = item('Dublin Core', 'Description'); ?>
     <?php if (isset($description)): ?>
                     <div id="description" class="element">
-                        <div class="element-text"><?php echo $description; ?></div>
+                        <div class="element-text" property="dc:description"><?php echo $description; ?></div>
                     </div>
     <?php endif ?>
         <div id="item-rights" class="element">
           <h3>Rights & Use Statement</h3>
-              <div class="element-text">
+              <div class="element-text" property="dc:rights">
                   Information regarding the reproduction and use of this resource may be obtained by contacting the Centers for Disease Control and Prevention, Office of the General Counsel, 1600 Clifton Road N.E., Mailstop D-53, Atlanta, GA 30329, USA. Phone: 404-639-7200. Fax: 404-639-7351 
               </div>
         </div>
