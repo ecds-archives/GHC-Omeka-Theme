@@ -29,7 +29,7 @@
 
     # Create Collection breadcrumb if collection specified.
     $breadCrumbs = array();
-    if (isset($collID)) {
+    if (isset($collID) && !empty($collID)) {
         $breadCrumbs[] = array('text'=>collection('Name').' Chronicles',
             'link'=>uri('collections/show/'.collection('Id')));
         $navbarTitle = 'The '.collection('Name').' Chronicle';
