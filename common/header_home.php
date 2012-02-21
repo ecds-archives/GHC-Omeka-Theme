@@ -48,7 +48,7 @@ display_css();
                 <span class="links">
                     <a href="<?php echo uri('about'); ?>">About This Site</a>
                     |
-                    <a href="<?php uri('links'); ?>">Related Resources</a>
+                    <a href="<?php echo uri('links'); ?>">Related Resources</a>
                 </span>
             </div>
 

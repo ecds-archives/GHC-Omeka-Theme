@@ -18,7 +18,7 @@
     <img alt="Google.org"
         src="<?php echo img('GoogleOrg.png', $dir='images/logos'); ?>" /></a>
 
-    <div id="copyright">&copy; 2009 <a href="http://www.emory.edu/copyright.cfm">Emory University</a></div>
+    <div id="copyright">&copy; 2009, 2012 <a href="http://www.emory.edu/copyright.cfm">Emory University</a></div>
 
     <div id="admin-login">
     <?php echo link_to_admin_home_page('Admin Login'); ?>
