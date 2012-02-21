@@ -1,0 +1,130 @@
+body, table {
+  font: 10pt black "Tahoma", sans-serif;
+}
+
+body {
+/*  padding-top: 95px;*/
+/*  background: url(logo.jpg) no-repeat;*/
+}
+
+h1, h2, h3 {
+  color: #05A;
+}
+
+hr { 
+  background-color: #038;	/* mozilla browsers */
+  color: #038;			/* IE */	
+  border:0px;
+  height: 2px;
+  width: 100%;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+
+#status {
+  margin-top: 1in;
+  border-top: 1px solid #999;
+  padding-top: 1em;
+  color: #999;
+  font-size: xx-small;
+}
+
+.xforms-label {
+  display: block;
+  background-color:#ddd;
+}
+
+.xforms-disabled {
+  display: none;
+}
+
+.xforms-read-only input {
+  background: #AAA;
+}
+
+.xforms-invalid .xforms-label {
+  color: red;
+}
+
+.xforms-required .xforms-label {
+  font-weight: bold;
+}                          
+
+.xforms-repeat-index {
+  background: #EEF;
+}
+
+.xforms-repeat-index .xforms-repeat-index {
+  background: #DDE;
+}
+
+* html .xforms-input,
+* html .xforms-output,
+* html .xforms-secret,
+* html .xforms-textarea,
+* html .xforms-select1,
+* html .xforms-select
+{
+  vertical-align: top;
+}
+
+/* make textarea big enough to be usable */
+.xforms-textarea td { width:600px;}
+textarea { width:100%; height:125px; }
+
+.xforms-required .xforms-label:after { content: " *"; }     
+
+/* modify display for checkbox/radio button layout */
+div.xfselect div span.xforms-label { display:inline; background-color:white;}
+div.xfselect div label { display:inline; font-weight:normal; }
+/* override asterisk for required fields (shows on each option otherwise) */
+div.xfselect div span.xforms-label:after { content: ""; }
+div.xfselect input { border:0px; } /* for IE */
+ 
+/* my attempts...
+         span.xforms-input {display:block;}
+        span.xforms-input input {width:350px;}
+        span.xforms-group {display:block;border:1px solid blue;}
+        span.xforms-group span.xforms-input, span.xforms-group span.xforms-label {margin-left:0.5in;}
+ 	.xforms-invalid {background-color:red;}
+	     div.doc {float:right;color:#efefef;border:1px solid green;}
+  
+*/
+
+
+/* make certain submit buttons look like links */
+span.xforms-trigger input { 
+  border:none;
+  background-color:transparent;
+  text-decoration:underline;
+  color: #05A;
+  font-size:smaller;
+  padding:0px;
+  margin:0px;
+  cursor:pointer;
+  clear:left;
+}
+
+/* key for required, invalid fields */
+div#xforms-key { 
+  font-size:90%;
+  border: 2px solid #565656; /* medium grey */
+  background-color: #efefef; /* light grey */
+  width:35%;
+  padding:3px;
+}
+div#xforms-key .xforms-label { display: inline; }
+div#xforms-key p { margin:0px; text-indent:10px;}
+div#xforms-key .invalid { color:red; font-weight:bold; }
+
+div.input { display:inline; }
+div.input div { display:inline; }
+
+.del .xforms-trigger input {
+  text-decoration:none;
+  font-weight:bold;
+  color:red; 
+  vertical-align:top;
+  background-color:white;
+}

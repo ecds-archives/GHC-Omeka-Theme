@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#logo.second {
+	height: auto;
+
+}
+#mainContent {
+	height: auto;
+}
+#header {
+	clear: both;
+	border-bottom: 6px solid #4E82A9;
+	height: 403px;
+}
+#logo.home {
+	float: left;
+	display: inline;
+	height: 403px;
+	background-image:url(../images/bg_logo_home.gif);	
+}
+#header table {
+	display: inline;
+	float: right;
+	margin-top: -387px;
+}
+
+#mainContent p {
+}
+table, 
+tr,
+td,
+#mainContent,
+img {
+	margin: 0;
+}
+#feature1, #feature2 {
+	display: inline;
+}
+
+#sidebar1.photo {
+	display: inline;
+	float: right;
+	margin-top: 40px;
+	margin-right: 20px;
+	margin-bottom: 40px;
+}
+#mainContent.photo {
+	display:inline;
+	float:left;
+	padding-left:80px;
+	padding-top:45px;
+	width:310px;
+}

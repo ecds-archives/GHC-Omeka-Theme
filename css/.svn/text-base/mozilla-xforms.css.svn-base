@@ -1,0 +1,50 @@
+*:disabled { display:none; }
+*:required { font-weight:bold; }
+*:required label:after { content: " *"; }     
+*:invalid  { color: red; }
+
+
+div#content { position:relative; top:0px; }
+select1 itemset { 
+/* FIXME: select options are positioned weirdly for some reason...  */
+/* padding:-0.25in !important;*/
+/* border:1px solid green;*/
+}
+
+itemset label:after, item label:after { content: "" !important; }     
+
+div.input, group  { 
+ float:left; 
+ margin:0px 2px 2px; 
+/* border:1px solid orange;*/
+}
+
+/*output, input, div.select  { 
+ float:left; 
+ margin:0px 2px;
+ background-color:white;
+}*/
+
+hr, br { 
+ clear:left;
+}
+
+label {
+  display: block;
+  background-color:#ddd;
+}
+trigger label { background-color:white; }
+
+
+/* make certain submit buttons look like links */
+trigger button { 
+  border:none;
+  background-color:white;
+  text-decoration:underline;
+  color: #05A;
+  font-size:smaller;
+  padding:0px;
+  margin:0px;
+  cursor:pointer;
+  clear:left;
+}

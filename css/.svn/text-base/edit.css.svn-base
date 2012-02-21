@@ -1,0 +1,51 @@
+/* edit form */
+label {
+  display: block;
+  background-color:#ddd;
+}
+label.required {
+  font-weight: bold;
+}                          
+/*label.required:after { content: " *"; }     */
+textarea { width:550px; height:125px; }
+
+ul.errors { color:red }
+
+div.fieldset { 
+border-top: 2px solid #038;
+border-bottom: 2px solid #038;
+
+ }
+
+.del {
+  text-decoration:none;
+  font-weight:bold;
+  color:red; 
+  vertical-align:top;
+  background-color:white;
+}
+
+
+hr { 
+  background-color: #038;	/* mozilla browsers */
+  color: #038;			/* IE */	
+  border:0px;
+  height: 2px;
+  width: 100%;
+  margin-top:5px;
+  margin-bottom:10px;
+  clear:both;
+}
+
+div.input { float:left; margin-right:5px; margin-bottom:5px;}
+div.textarea { width:550px; }
+
+div.radio_select label { display:inline; background-color:white;}
+
+.trigger, .addButton { 
+  clear:left;
+  background-color:transparent;
+  text-decoration:underline;
+  color: #05A;
+  font-size:smaller;
+}

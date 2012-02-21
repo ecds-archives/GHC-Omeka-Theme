@@ -1,0 +1,90 @@
+/* 
+    Document   : listicons
+    Created on : Jan 24, 2012, 12:24:29 PM
+    Author     : sturnbu
+    Description:
+        Creates default thumbnail images to use in list views for
+        various filetypes.
+*/
+
+div.audio-aac,
+div.audio-aiff,
+div.audio-mid,
+div.audio-midi,
+div.audio-mp3,
+div.audio-mp4,
+div.audio-mpeg,
+div.audio-mpeg3,
+div.audio-ogg,
+div.audio-wav,
+div.audio-wma,
+div.audio-x-aac,
+div.audio-x-aiff,
+div.audio-x-midi,
+div.audio-x-mp3,
+div.audio-x-mp4,
+div.audio-x-mpeg,
+div.audio-x-mpeg3,
+div.audio-x-mpegaudio,
+div.audio-x-ms-wax,
+div.audio-x-realaudio,
+div.audio-x-wav,
+div.audio-x-wma {
+    background-image: url(../images/audio_icon.gif);
+}
+
+div.image-bmp,
+div.image-gif,
+div.image-icon,
+div.image-jpeg,
+div.image-pjpeg,
+div.image-png,
+div.image-tiff,
+div.image-x-icon,
+div.image-x-ms-bmp {
+    background-image: url(../images/photo_icon.gif);
+}
+
+div.application-ogg,
+div.application-x-ms-wmp,
+div.application-x-ogg,
+div.application-x-shockwave-flash,
+div.video-asf,
+div.video-avi,
+div.video-divx,
+div.video-mp4,
+div.video-mpeg,
+div.video-msvideo,
+div.video-ogg,
+div.video-quicktime,
+div.video-x-ms-wmv,
+div.video-x-msvideo {
+    background-image: url(../images/video_icon.gif);
+}
+
+div.application-msword,
+div.application-pdf,
+div.application-rtf,
+div.application-vnd-ms-access,
+div.application-vnd-ms-excel,
+div.application-vnd-ms-powerpoint,
+div.application-vnd-ms-project,
+div.application-vnd-ms-write,
+div.application-vnd-oasis-opendocument-chart,
+div.application-vnd-oasis-opendocument-database,
+div.application-vnd-oasis-opendocument-formula,
+div.application-vnd-oasis-opendocument-graphics,
+div.application-vnd-oasis-opendocument-presentation,
+div.application-vnd-oasis-opendocument-spreadsheet,
+div.application-vnd-oasis-opendocument-text,
+div.application-x-gzip,
+div.application-x-msdownload,
+div.application-x-tar,
+div.application-zip,
+div.text-css,
+div.text-plain,
+div.text-richtext,
+div.application-vnd-ms-office {
+    background-image: url(../images/document_icon.gif);
+}
+
