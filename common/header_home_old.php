@@ -1,4 +1,10 @@
 <?php
+/*
+ * Header file formatted for single item display similar to the original site.
+ * header_home.php was created and used instead to support use of dynamic
+ * featured items.
+ * 
+ */
 if (!isset($headerClass)) {
     $headerClass = 'second'; # Some stuff needed to port the theme
 }

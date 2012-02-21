@@ -1,4 +1,8 @@
 <?php
+/*
+ * Contains all custom functions used in the theme.
+ */
+
 function get_collection_item_typeids($collectionID) {
     # Returns an array of unique item type ids from items in a specific collection.
     $itemTableName = get_db()->getTable('Item')->getTableName();

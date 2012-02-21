@@ -1,7 +1,15 @@
-<?php head(array('title' => 'Browse Chronicles', 'bodyid' => 'collections', 'bodyclass' => 'browse')); ?>
+<?php
+/*
+ * collections/browse.php
+ * Used here to browse a list of collections.  Not linked anywhere in the site
+ * currently.
+ * 
+ */
+head(array('title' => 'Browse Chronicles', 'bodyid' => 'collections', 'bodyclass' => 'browse'));
+?>
     <h1>Chronicles</h1>
-    <p>
-    <div class="pagination"><?php echo pagination_links(); ?></div>
+    
+    <div class="pagination"><?php echo pagination_links(); ?></div><p>
     <?php while (loop_collections ()): ?>
         <div class="collection">
             <div class="title"><?php echo link_to_collection(); ?></div>

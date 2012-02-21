@@ -1,4 +1,8 @@
 <?php
+/*
+ * Header file to use for the front page.  Supports the layout for the summary
+ * and header variations.
+ */
 if (!isset($headerClass)) {
     $headerClass = 'second'; # Some stuff needed to port the theme
 }

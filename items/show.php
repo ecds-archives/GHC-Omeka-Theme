@@ -1,10 +1,14 @@
 <?php
+/*
+ * Shows details about individual items.
+ */
+
 $Collection = get_collection_for_item(); # Get collection for breadcrumbs and nav bar title..
 $breadCrumbs = array(); # Init breadcrumbs as empty by default.
-$navbarTitle = '';
+$navbarTitle = 'The Global Health Chronicles'; # Default navbartitle
 $Type = get_item_type_by_name(item('item type name')); # Custom function to get type info.
 
-# Build collection breadcrumb information.
+# Build collection breadcrumb and navbar title information.
 if (isset($Collection)) {
     $breadCrumbs[] = array('text' => $Collection->name . ' Chronicles',
         'link' => uri('collections/show/' . $Collection->id));

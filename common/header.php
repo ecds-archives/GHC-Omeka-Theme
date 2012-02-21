@@ -1,6 +1,9 @@
 <?php
+/*
+ * Default header file to be used on all pages by the front.
+ */
 if (!isset($headerClass)) {
-    $headerClass = 'second'; # Some stuff needed to port the theme
+    $headerClass = 'second'; # A default class needed for the CSS. Artifact of migration.
 }
 ?>
 <!doctype html>

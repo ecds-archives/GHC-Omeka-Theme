@@ -1,9 +1,18 @@
 <?php
+    /*
+     * items/browse.php
+     *
+     * Used for displaying lists of individual items.
+     */
+
     # Santize collection and type get variables if present for use later.
     $collID = filter_input(INPUT_GET, 'collection', FILTER_SANITIZE_NUMBER_INT);
     $typeID = filter_input(INPUT_GET, 'type', FILTER_SANITIZE_NUMBER_INT);
-    $styles = array('listicons'); # Set additional styles to use
-    
+
+    $styles = array('listicons'); # Set additional stylesheets to use for this page.
+
+    # Bring in additional collection and type information since GHC item
+    # displays are based on that.
     if (isset($collID)) {
         set_current_collection(get_collection_by_id($collID));
     }
@@ -15,9 +24,11 @@
         }
     }
    
+    # Set the navbarTitle for the display
+    $navbarTitle = 'The Global Health Chronicles';
+
     # Create Collection breadcrumb if collection specified.
     $breadCrumbs = array();
-    $navbarTitle = 'The Global Health Chronicles';
     if (isset($collID)) {
         $breadCrumbs[] = array('text'=>collection('Name').' Chronicles',
             'link'=>uri('collections/show/'.collection('Id')));

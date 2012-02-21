@@ -1,4 +1,12 @@
-<?php head(array('title'=>collection('Name').' Collection', 'navbarTitle'=>'The '.collection('Name').' Chronicle')); ?>
+<?php 
+/*
+ * collections/show.php
+ * 
+ * Used to show details about a specific collection.  It also shows a list of
+ * item types with one or more items assigned to them.
+ */
+head(array('title'=>collection('Name').' Collection', 'navbarTitle'=>'The '.collection('Name').' Chronicle'));
+?>
 <div id="sidebar">
     <div id="featureContentType" class="<?php echo preg_replace( '/\s+/', '', strtolower(collection('Name'))); ?>">
     <?php $item_type_id_list = get_collection_item_typeids(collection('Id')); ?>
